@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+<main>
+  <section class="gallery-grid">
+    <% posts.forEach(post => { %>
+      <article class="gallery-card">
+        <h2><a href="/posts/<%= post.title %>"><%= post.title %></a></h2>
+        <p><%= post.content.substring(0, 100) %>...</p>
+      </article>
+    <% }) %>
+  </section>
+</main>
+<%- include("partials/footer") %>

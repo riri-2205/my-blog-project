@@ -1,0 +1,9 @@
+<%- include("partials/header") %>
+<main>
+  <form action="/compose" method="POST" class="compose-form">
+    <input type="text" name="postTitle" placeholder="Post Title" required>
+    <textarea name="postBody" placeholder="Post Content" required></textarea>
+    <button type="submit">Publish</button>
+  </form>
+</main>
+<%- include("partials/footer") %>
